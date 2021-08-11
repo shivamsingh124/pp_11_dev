@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .form1 {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                align-items: center;
+                /* background-color: chocolate; */
+                justify-content: center;
+            }
+            .submit{height: 33px;}
+            .Password{height: 33px;}
+            .inputBox{
+                height: 33px;
+            }
+            .button{
+                height: 24px;
+    width: 81px;
+    background-color: purple;
+    margin-left: 30%;
+            }
+            .forget{
+                margin-left: 16%; 
+            }
+            .form{
+                margin: 3px;
+    padding: 20px;
+    border: 2px solid;
+            }
+        </style>
+        <title>Sign-UP</title>
+    </head>
+    <body>
+        <div class="form1">
+           
+            <form action="/signup" method="post" class="form">
+                <div>
+                    <p>SIGN IN TO YOUR ACCOUNT</p>
+                </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="E-Mail" name="mail">
+                </div> 
+                <div class="Password">
+                    <input type="text" placeholder="Password" name="add">
+                </div>
+                <div>
+                    <p>Keep me signed IN</p>
+                </div>
+                <div class="submit">
+                    <input type="submit" name="" id="" value="SIGN UP" class="button">
+                </div>
+                <a class="forget"> Forget your password</a>
+            </form>
+        </div>
+        <script>
+            let button=document.getElementById("#button");
+            button.addEventListener("onclick",function fun(e){
+                console.log(e);
+            });
+        </script>
+    </body>
+</html>
