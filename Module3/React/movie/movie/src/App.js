@@ -1,39 +1,17 @@
 import React from "react";
-import Child from "./Child";
+
 class App extends React.Component{
-  state={
-    child: true,
-};
-componentDidMount(){
-  console.log("parent component did mount was called");
-}
-componentDidUpdate() {
-  console.log("parent component did update was called");
+    componentDidMount(){
+        let f =async ( )=>{
+        let result = await fetch ( "http://localhost:4000/movies");
+        let json= await result.json();
+        console.log(json);
+    }
+    f();
 }
 
-componentWillUnmount() {
-  console.log("parent component will umount was called");
-}
-render ( ){
-  console.log("parent render called");
-  return (
-    <div>
-      <button onClick={
-        ()=>{
-          if ( this.state.child){
-              this.setState({child:false})
-          }
-          else{
-            this.setState({child:true})
-
-          }
-        }
-      }>
-        parent toggle
-      </button>
-      {this.state.child?<Child/>:""}
-    </div>
-  )
-}
+    render(){
+        return <div></div>
+    }
 }
 export default App;
