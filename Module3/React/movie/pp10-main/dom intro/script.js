@@ -1,1 +1,0 @@
-console.log("From external file");
