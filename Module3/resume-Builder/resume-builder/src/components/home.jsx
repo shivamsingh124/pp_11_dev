@@ -24,7 +24,7 @@ let Home = () => {
         </div>
         <div
           onClick={() => {
-            dispatch(templateCreator("B"));
+            dispatch(templateCreator("B") );
             history.push("/personal");
           }}
           className="template"
