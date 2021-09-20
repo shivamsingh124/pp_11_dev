@@ -33,61 +33,19 @@ class App extends React.Component {
   }
   render = () => {
     return (
-      <div className="fle">
+ 
         <div className="main">
           {/* <input type="text" className="input" onChange={() => {
       //  .handleCurrInput(e.currentTarget.value); 
     }}
     value={this.state.res}
     ></input> */}
-          { console.log(this.state.operand1)}
-          {console.log(this.state.res)}
-          {console.log(this.state.flag)}
-          {/* <p>{this.diaplay()}</p> */}
-          <p>{this.state.res}</p>
-          <div className="opr">
-            <button className="cal" onClick={() => {
-            }}>+</button>
-            <button className="cal">-</button>
-            <button className="cal">/</button>
-            <button className="cal">*</button>
-          </div>
-          <button className="num" onClick={() => {
-            this.set(-2);
-          }}>khatam</button>
-          <div className="ope">
-            <button className="num" onClick={() => {
-              this.set(1);
-            }}>1</button>
-            <button className="num" onClick={() => {
-              this.set(2);
-
-            }}>2</button>
-            <button className="num" onClick={() => {
-              this.set(3);
-            }}>3</button>
-            <button className="num" onClick={() => {
-              this.set(4);
-            }}>4</button>
-            <button className="num" onClick={() => {
-              this.set(5);
-            }}>5</button>
-            <button className="num" onClick={() => {
-              this.set(6);
-            }}>6</button>
-            <button className="num" onClick={() => {
-              this.set(7);
-            }}>7</button>
-            <button className="num" onClick={() => {
-              this.set(8);
-            }}>8</button>
-            <button className="num1" onClick={() => {
-              this.set(0);
-            }}>RESET</button>
-          </div>
+         
+            {console.log(<span/>)}
+       
 
         </div>
-      </div>
+
     )
   }
 }
