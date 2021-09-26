@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 let allusernames = require("./usernames");
 const loginID = "@ShivamSinghMah7";
-const password = "trijal123";
+const password = "trijal123" ;
 let tab;
 
 let browserOpenPromise = puppeteer.launch({
