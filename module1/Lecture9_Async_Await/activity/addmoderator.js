@@ -45,7 +45,7 @@ async function login(){
 //   await allpromisecombined;
 //   let onequestionpromise= solvequestion(allpromisecombined[0])
   for ( let i=1 ;i < allpendingpromise.length;i++){
-//   
+//    
 let qlink= allpendingpromise[i];
 let newtab=await browser.newPage();
 await addModeratorToASingleQues(newTab,qlink);
