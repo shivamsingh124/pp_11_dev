@@ -120,4 +120,30 @@ async function addModeratorToASingleQues(newTab , qLink){
 //     let allATags = await tab.$$('.backbone.block-center');
 //     let allQuesLinks = [];
 //     for(let i=0 ; i<allATags.length ; i++){
-// 
+//         let qLink = await tab.evaluate( function(elem){  return elem.getAttribute("href");  }   , allATags[i]);
+//         qLink = "https://www.hackerrank.com"+qLink;
+//         allQuesLinks.push(qLink);
+//     }
+
+//     for(let i=0 ; i<allQuesLinks.length ; i++){
+//         let qLink = allQuesLinks[i];
+//         let newTab = await browser.newPage();
+//         await addModeratorToASingleQues(newTab , qLink);
+//     }
+//     await tab.click(".pagination a.backbone")
+//     addModerators(browser,tab);
+
+// }
+
+
+// async function addModeratorToASingleQues(newTab , qLink){
+//        await newTab.goto(qLink);
+//        await newTab.waitForTimeout(2000);
+//        await newTab.click('li[data-tab="moderators"]');
+//        await newTab.waitForSelector('#moderator' , {visible:true});
+//        await newTab.type("#moderator" , "pep");
+//        await newTab.click('.btn.moderator-save');
+//        await newTab.click('.save-challenge.btn.btn-green');
+//        await newTab.waitForTimeout(2000);
+//        await newTab.close();
+// }
