@@ -84,17 +84,6 @@ async function addModeratorToASingleQues(newTab , qLink){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // const id = "pamico3332@nic58.com";
 // const pw = "12345678";
 // const puppeteer = require("puppeteer");
